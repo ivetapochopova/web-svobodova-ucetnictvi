@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Stránka nenalezena | Lucie Svobodová</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+
+    <!-- Fallback if user uses Web Awesome icons -->
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/components/icon/icon.js"></script>
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: var(--clr-bg);
+            padding: 2rem;
+        }
+
+        .error-message {
+            font-size: 5rem;
+            color: var(--clr-primary);
+            margin-bottom: 1rem;
+        }
+
+        wa-icon {
+            font-size: 5rem;
+            color: var(--clr-primary);
+            margin-bottom: 1rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+        <!-- Požadovaná ikona ze zadání -->
+        <wa-icon name="face-frown" variant="regular"></wa-icon>
+
+        <h2>Jejda... Tady nic není.</h2>
+        <p>Stránka, kterou hledáte, neexistuje nebo byla přesunuta.</p>
+
+        <br>
+        <a href="/" class="btn btn-primary">Zpět na hlavní stránku</a>
+    </div>
+</body>
+
+</html>
