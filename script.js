@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --- Sticky Header ---
     const header = document.querySelector('.header');
     window.addEventListener('scroll', () => {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Scroll Reveal Animations ---
     const revealElements = document.querySelectorAll('.reveal');
-    
+
     const revealOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.addEventListener('click', () => {
             // Close others (optional behaviour - strictly not required if individual toggle is preferred, but standard for FAQ)
             accordions.forEach(item => {
-                if(item !== acc && item.classList.contains('active')) {
+                if (item !== acc && item.classList.contains('active')) {
                     item.classList.remove('active');
                     item.querySelector('.accordion-content').style.maxHeight = null;
                 }
@@ -80,22 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Cookie Banner ---
-    const cookieBanner = document.getElementById('cookieBanner');
-    const acceptBtn = document.getElementById('acceptCookies');
-    
-    // Check if user already accepted
-    if (!localStorage.getItem('cookiesAccepted')) {
-        setTimeout(() => {
-            cookieBanner.classList.add('show');
-        }, 1500); // Show after 1.5s
-    }
 
-    if (acceptBtn) {
-        acceptBtn.addEventListener('click', () => {
-            localStorage.setItem('cookiesAccepted', 'true');
-            cookieBanner.classList.remove('show');
-        });
-    }
 
 });

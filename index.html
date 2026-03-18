@@ -7,21 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- SEO & Metadata -->
-    <title>Lucie Svobodová | Moderní účetnictví a finance</title>
+    <title>Lucie Svobodová | Moderní účetnictví a finance online</title>
     <meta name="description"
-        content="Profesionální vedení účetnictví, daňová evidence a finanční poradenství pro firmy, OSVČ i neziskové organizace s důrazem na přesnost a srozumitelnost.">
+        content="Profesionální online účetnictví pro celou ČR, daňová evidence a finanční poradenství pro firmy, OSVČ i neziskové organizace.">
+    <meta name="keywords"
+        content="účetnictví online, online účetní, daňová evidence, mzdová agenda, finanční poradenství, online účetnictví celá ČR, jednoduché účetnictví, podvojné účetnictví, neziskovky">
+    <meta name="author" content="Ing. Lucie Svobodová">
     <meta name="robots" content="noindex, nofollow">
     <link rel="canonical" href="https://www.luciesvobodova.cz/">
 
-    <!-- Open Graph for Social Media -->
+    <!-- Open Graph for Social Media & AI -->
     <meta property="og:title" content="Lucie Svobodová | Moderní účetnictví a finance">
     <meta property="og:description" content="Spolehlivé účetnictví a srozumitelný reporting pro vaše klidné podnikání.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.luciesvobodova.cz/">
     <meta property="og:image" content="https://www.luciesvobodova.cz/obrazky/lucie.svobodova.png">
+    <meta property="og:image:alt" content="Lucie Svobodová | Moderní účetnictví a finance">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Lucie Svobodová Účetnictví">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lucie Svobodová | Moderní účetnictví a finance">
+    <meta name="twitter:description" content="Profesionální vedení účetnictví, daňová evidence a finanční poradenství.">
+    <meta name="twitter:image" content="https://www.luciesvobodova.cz/obrazky/lucie.svobodova.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="obrazky/favicon%20svobodova-ucetnictvi.svg">
 
     <!-- Fonts (Gowun Dodum) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,21 +47,55 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured Data (JSON-LD) pro SEO a AI -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AccountingService",
-      "name": "Lucie Svobodová - Účetní služby",
-      "image": "https://www.luciesvobodova.cz/obrazky/logo-dark-bg-cropped.png",
-      "url": "https://www.luciesvobodova.cz",
-      "telephone": "",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CZ"
-      },
-      "description": "Profesionální vedení účetnictví, daňová evidence a finanční poradenství."
+      "@graph": [
+        {
+          "@type": ["AccountingService", "ProfessionalService", "LocalBusiness"],
+          "@id": "https://www.luciesvobodova.cz/#organization",
+          "name": "Ing. Lucie Svobodová - Moderní účetnictví a finance",
+          "url": "https://www.luciesvobodova.cz",
+          "telephone": "+420705238718",
+          "email": "lucie.svoboda21@gmail.com",
+          "image": "https://www.luciesvobodova.cz/obrazky/Lucie%20Svobodova%20o%20mne.jpg",
+          "description": "Profesionální vedení účetnictví, daňová evidence a finanční poradenství plně online pro celou ČR.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Studentská 2480/7",
+            "addressLocality": "Mělník",
+            "postalCode": "276 01",
+            "addressCountry": "CZ"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Ing. Lucie Svobodová",
+            "jobTitle": "Certifikovaná účetní"
+          },
+          "priceRange": "$$",
+          "areaServed": [
+            {
+              "@type": "Country",
+              "name": "Czech Republic"
+            }
+          ],
+          "sameAs": [
+            "https://www.luciesvobodova.cz/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.luciesvobodova.cz/#website",
+          "url": "https://www.luciesvobodova.cz",
+          "name": "Lucie Svobodová Účetnictví",
+          "description": "Profesionální vedení účetnictví a financí.",
+          "publisher": {
+            "@id": "https://www.luciesvobodova.cz/#organization"
+          },
+          "inLanguage": "cs"
+        }
+      ]
     }
     </script>
 </head>
@@ -119,8 +165,15 @@
                     </div>
                 </div>
 
-                <div class="hero-cta reveal" style="transition-delay: 0.3s;">
+                <div class="hero-cta reveal"
+                    style="transition-delay: 0.3s; display: flex; flex-direction: column; align-items: flex-start; gap: 1rem;">
                     <a href="#kontakt" class="btn btn-primary">Chci mít v číslech jasno</a>
+                    <p
+                        style="font-size: 1.1rem; color: var(--clr-text); font-weight: 500; margin: 0; padding-top: 0.5rem;">
+                        <i class="fa-solid fa-laptop-house"
+                            style="color: var(--clr-primary); margin-right: 0.5rem;"></i> Působím plně online pro
+                        klienty z celé ČR
+                    </p>
                 </div>
 
             </div>
@@ -289,14 +342,6 @@
                                 </p>
                             </div>
 
-                            <div
-                                style="background: var(--clr-bg); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--clr-secondary);">
-                                <h4 style="color: var(--clr-primary); margin-bottom: 0.5rem; font-size: 1.1rem;">
-                                    Diskrétnost a důvěra
-                                </h4>
-                                <p style="color: var(--clr-text); margin: 0; font-size: 0.95rem; line-height: 1.5;">
-                                    Informace jsou chráněny s maximální péčí.</p>
-                            </div>
 
                         </div>
                     </div>
@@ -359,7 +404,8 @@
                 <div class="about-grid">
 
                     <div class="about-image reveal">
-                        <img src="obrazky/lucie.svobodova.png" alt="Portrét Lucie Svobodová - Účetní" loading="lazy">
+                        <img src="obrazky/Lucie Svobodova o mne.jpg" alt="Portrét Lucie Svobodová - Účetní"
+                            loading="lazy">
                     </div>
 
                     <div class="about-content reveal" style="transition-delay: 0.2s;">
@@ -384,9 +430,12 @@
                             </li>
                         </ul>
 
-                        <p>Pracuji systematicky, pečlivě a&nbsp;zodpovědně. Neustále sleduji legislativní změny
-                            i&nbsp;novinky v&nbsp;oblasti financí. Zakládám si na férové komunikaci, diskrétnosti
-                            a&nbsp;individuálním přístupu ke každému klientovi.</p>
+                        <ul class="service-list">
+                            <li>Pracuji systematicky, pečlivě a&nbsp;zodpovědně.</li>
+                            <li>Neustále sleduji legislativní změny i&nbsp;novinky v&nbsp;oblasti financí.</li>
+                            <li>Zakládám si na férové komunikaci, diskrétnosti a&nbsp;individuálním přístupu ke každému
+                                klientovi.</li>
+                        </ul>
                     </div>
 
                 </div>
@@ -405,17 +454,18 @@
                     </p>
                 </div>
 
-                <div class="contact-section reveal">
-                    <div class="contact-grid">
+                <div class="contact-grid-wrapper reveal"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-xl); margin: var(--space-xl) auto 0; max-width: 800px;">
 
+                    <!-- Kontakt Blok -->
+                    <div class="contact-section"
+                        style="margin-top: 0; display: flex; flex-direction: column; justify-content: center;">
                         <div class="contact-info">
-
-
                             <div class="contact-info-item">
                                 <i class="fa-solid fa-envelope"></i>
                                 <div>
                                     <strong>E-mail</strong>
-                                    <p><a href="mailto:info@luciesvobodova.cz">info@luciesvobodova.cz</a></p>
+                                    <p><a href="mailto:lucie.svoboda21@gmail.com">lucie.svoboda21@gmail.com</a></p>
                                 </div>
                             </div>
 
@@ -423,12 +473,27 @@
                                 <i class="fa-solid fa-phone"></i>
                                 <div>
                                     <strong>Telefon</strong>
-                                    <p><a href="tel:+420123456789">+420 123 456 789 (DOPLNIT)</a></p>
+                                    <p><a href="tel:+420705238718">705 238 718</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <i class="fa-solid fa-laptop"></i>
+                                <div>
+                                    <strong>Působnost</strong>
+                                    <p>Plně online po celé ČR</p>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+                    <!-- Fotka Blok -->
+                    <div class="contact-image"
+                        style="border-radius: var(--radius-lg); overflow: hidden; display: flex;">
+                        <img src="obrazky/Lucie Svobodova ucetnictvi.jpg" alt="Lucie Svobodová"
+                            style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -463,13 +528,6 @@
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
-    <div id="cookieBanner" class="cookie-banner">
-        <p>Tento web používá soubory cookies k zajištění správného fungování a analýze návštěvnosti. Pokračováním v
-            prohlížení souhlasíte s jejich použitím.</p>
-        <button id="acceptCookies" class="btn btn-white" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Rozumím a
-            přijímám</button>
-    </div>
 
 </body>
 
