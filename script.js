@@ -80,6 +80,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
+    // --- Current Year ---
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 
 });

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.luciesvobodova.cz/sitemap.xml
+Sitemap: https://www.svobodova-ucetnictvi.cz/sitemap.xml

@@ -13,15 +13,15 @@
     <meta name="keywords"
         content="účetnictví online, online účetní, daňová evidence, mzdová agenda, finanční poradenství, online účetnictví celá ČR, jednoduché účetnictví, podvojné účetnictví, neziskovky">
     <meta name="author" content="Ing. Lucie Svobodová">
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="canonical" href="https://www.luciesvobodova.cz/">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.svobodova-ucetnictvi.cz/">
 
     <!-- Open Graph for Social Media & AI -->
     <meta property="og:title" content="Lucie Svobodová | Moderní účetnictví a finance">
     <meta property="og:description" content="Spolehlivé účetnictví a srozumitelný reporting pro vaše klidné podnikání.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.luciesvobodova.cz/">
-    <meta property="og:image" content="https://www.luciesvobodova.cz/obrazky/lucie.svobodova.png">
+    <meta property="og:url" content="https://www.svobodova-ucetnictvi.cz/">
+    <meta property="og:image" content="https://www.svobodova-ucetnictvi.cz/obrazky/lucie.svobodova.png">
     <meta property="og:image:alt" content="Lucie Svobodová | Moderní účetnictví a finance">
     <meta property="og:locale" content="cs_CZ">
     <meta property="og:site_name" content="Lucie Svobodová Účetnictví">
@@ -30,7 +30,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lucie Svobodová | Moderní účetnictví a finance">
     <meta name="twitter:description" content="Profesionální vedení účetnictví, daňová evidence a finanční poradenství.">
-    <meta name="twitter:image" content="https://www.luciesvobodova.cz/obrazky/lucie.svobodova.png">
+    <meta name="twitter:image" content="https://www.svobodova-ucetnictvi.cz/obrazky/lucie.svobodova.png">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="obrazky/favicon%20svobodova-ucetnictvi.svg">
@@ -54,12 +54,12 @@
       "@graph": [
         {
           "@type": ["AccountingService", "ProfessionalService", "LocalBusiness"],
-          "@id": "https://www.luciesvobodova.cz/#organization",
+          "@id": "https://www.svobodova-ucetnictvi.cz/#organization",
           "name": "Ing. Lucie Svobodová - Moderní účetnictví a finance",
-          "url": "https://www.luciesvobodova.cz",
+          "url": "https://www.svobodova-ucetnictvi.cz",
           "telephone": "+420705238718",
           "email": "lucie.svoboda21@gmail.com",
-          "image": "https://www.luciesvobodova.cz/obrazky/Lucie%20Svobodova%20o%20mne.jpg",
+          "image": "https://www.svobodova-ucetnictvi.cz/obrazky/Lucie%20Svobodova%20o%20mne.jpg",
           "description": "Profesionální vedení účetnictví, daňová evidence a finanční poradenství plně online pro celou ČR.",
           "address": {
             "@type": "PostalAddress",
@@ -81,17 +81,17 @@
             }
           ],
           "sameAs": [
-            "https://www.luciesvobodova.cz/"
+            "https://www.svobodova-ucetnictvi.cz/"
           ]
         },
         {
           "@type": "WebSite",
-          "@id": "https://www.luciesvobodova.cz/#website",
-          "url": "https://www.luciesvobodova.cz",
+          "@id": "https://www.svobodova-ucetnictvi.cz/#website",
+          "url": "https://www.svobodova-ucetnictvi.cz",
           "name": "Lucie Svobodová Účetnictví",
           "description": "Profesionální vedení účetnictví a financí.",
           "publisher": {
-            "@id": "https://www.luciesvobodova.cz/#organization"
+            "@id": "https://www.svobodova-ucetnictvi.cz/#organization"
           },
           "inLanguage": "cs"
         }
@@ -295,7 +295,7 @@
                             <span class="highlight-marker" style="color: var(--clr-primary);">Co získáte?</span>
                         </h3>
                         <div
-                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
+                            class="benefits-grid" style="gap: 1.5rem;">
 
                             <div
                                 style="background: var(--clr-bg); padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--clr-secondary);">
@@ -536,7 +536,8 @@
 
             <div class="footer-bottom">
                 <div class="footer-copyright">
-                    <p>&copy; 2026 Lucie Svobodová. Všechna práva vyhrazena.</p>
+                    <p>&copy; <span id="current-year">2026</span> Lucie Svobodová. Všechna práva vyhrazena.</p>
+                    <p style="font-size: 0.85em; margin-top: 0.5rem; opacity: 0.8;">Tvorba webu: <a href="https://www.webysradosti.cz" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">webysradosti.cz</a></p>
                 </div>
             </div>
         </div>

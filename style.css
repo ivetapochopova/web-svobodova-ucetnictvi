@@ -1495,3 +1495,19 @@ textarea.form-control {
     padding-bottom: 2rem;
   }
 }
+
+/* --- Benefits Grid (Co získáte) --- */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
